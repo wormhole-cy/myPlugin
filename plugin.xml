@@ -11,7 +11,7 @@
 		</feature>
 	</config-file>
 	<source-file src="src/ios/myPlugin.m" />
-	<resource-file src="src/ios/JSSDK/JDSDK.bundle"/>
-	<source-file src="src/ios/JSSDK/JDSDK.framework" framework="true"/>
+	<resource-file src="src/ios/JDSDK/JDSDK.bundle"/>
+	<source-file src="src/ios/JDSDK/JDSDK.framework" framework="true"/>
 </platform>
 </plugin>
