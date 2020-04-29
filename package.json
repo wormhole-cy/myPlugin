@@ -10,16 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git-repositories.zuzuche.com:10023/zzc_mobile/TG/myPluign.git"
+    "url": "ssh://git@git-repositories.zuzuche.com:10023/zzc_mobile/TG/MyPlugin.git"
   },
   "keywords": [
-    "ecosystem:cordova",
-    "cordova-ios"
+    "MyPlugin"
   ],
   "author": "chenyuekai",
   "license": "ISC",
-  "bugs": {
-    "url": "http://git-repositories.zuzuche.com/zzc_mobile/TG/myPlugin/issues"
-  },
-  "homepage": "http://git-repositories.zuzuche.com/zzc_mobile/TG/myPlugin#readme"
 }
