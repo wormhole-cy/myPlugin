@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git-repositories.zuzuche.com:10023/zzc_mobile/TG/myPlugin.git"
+    "url": "http://git-repositories.zuzuche.com:10081/zzc_mobile/TG/myPlugin.git"
   },
   "keywords": [
     "ecosystem:cordova",
