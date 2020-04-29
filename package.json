@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-myPlugin",
+  "version": "1.0.0",
+  "description": "自定义插件",
+  "cordova": {
+    "id": "cordova-plugin-myPlugin",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wormhole-cy/myPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "chenyuekai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wormhole-cy/myPlugin/issues"
+  },
+  "homepage": "https://github.com/wormhole-cy/myPlugin#readme"
+}
