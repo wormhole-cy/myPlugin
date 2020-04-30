@@ -15,6 +15,27 @@
 
 @implementation myPlugin
 
+- (void)pluginInitialize{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *jdAppKey = [self.commandDelegate settings] objectForKey:@"jdAppKey"];
+        NSString *jdAppSecret = [self.commandDelegate settings] objectForKey:@"jdAppSecret"];
+        [[KeplerApiManager sharedKPService] asyncInitSdk:jdAppKey secretKey:jdAppSecret sucessCallback:^{
+        //        ZZCLog(@"KeplerApiManager asyncInitSdk success");
+            } failedCallback:^(NSError *error) {
+        //        ZZCLog(@"KeplerApiManager asyncInitSdk error: %@", error);
+            }];
+        
+        [[AlibcTradeSDK sharedInstance] setEnv:AlibcEnvironmentRelease];
+         [[AlibcTradeSDK sharedInstance] asyncInitWithSuccess:^{
+            NSLog(@"初始化成功");
+        } failure:^(NSError *error) {
+            NSLog(@"初始化失败");
+        }];
+    });
+    
+}
+
 - (void)openJD:(CDVInvokedUrlCommand*)command
 {
     __weak myPlugin *wSelf = self;
